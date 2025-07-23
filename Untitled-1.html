@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- charset first -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Professional Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- Name and Tagline -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl font-bold rounded-md px-2 py-1 inline-block">Your Name</h1>
+                <p class="text-xl mt-1 opacity-90">Passionate Developer | [Your Primary Skill]</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-lg font-medium">
+                <a href="#about" class="hover:text-blue-200 transition duration-300 ease-in-out rounded-md px-3 py-1">About</a>
+                <a href="#certifications" class="hover:text-blue-200 transition duration-300 ease-in-out rounded-md px-3 py-1">Certifications</a>
+                <a href="#projects" class="hover:text-blue-200 transition duration-300 ease-in-out rounded-md px-3 py-1">Projects</a>
+                <a href="#contact" class="hover:text-blue-200 transition duration-300 ease-in-out rounded-md px-3 py-1">Contact</a>
+                <!-- Resume Button -->
+                <a href="https://placehold.co/200x200/cccccc/ffffff?text=Resume.pdf" target="_blank" class="bg-white text-blue-600 hover:bg-blue-100 px-4 py-2 rounded-full font-semibold transition duration-300 ease-in-out shadow-md">
+                    Resume <i class="fas fa-download ml-2"></i>
+                </a>
+            </nav>
+
+            <!-- Social Media Icons (Top Right) -->
+            <div class="flex space-x-4 mt-4 md:mt-0 md:absolute md:top-6 md:right-8">
+    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" class="text-white hover:text-blue-200 transition duration-300 ease-in-out text-2xl" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:your.email@example.com" class="text-white hover:text-blue-200 transition duration-300 ease-in-out text-2xl" aria-label="Gmail">
+        <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://github.com/yourprofile" target="_blank" class="text-white hover:text-blue-200 transition duration-300 ease-in-out text-2xl" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+</div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white p-8 rounded-xl shadow-lg mb-12 transform hover:scale-[1.005] transition duration-300 ease-in-out">
+            <h2 class="text-4xl font-extrabold text-center text-blue-700 mb-8 relative">
+                About Me
+                <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+            </h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <!-- Profile Picture -->
+                <div class="flex-shrink-0 mb-6 md:mb-0">
+                    <img src="https://placehold.co/200x200/007bff/ffffff?text=Your+Photo" alt="Your Profile Picture" class="w-48 h-48 rounded-full object-cover border-4 border-blue-500 shadow-md">
+                </div>
+                <!-- About Content -->
+                <div class="text-lg text-gray-700 text-center md:text-left">
+                    <p class="mb-4">Hello! I'm <span class="font-semibold text-blue-600">Your Name</span>, a <span class="font-semibold text-purple-600">[Your Profession/Role, e.g., Full-Stack Developer]</span> with a strong passion for <span class="font-semibold text-green-600">[Your Interests, e.g., building scalable web applications and solving complex data problems]</span>. I thrive on learning new technologies and crafting innovative solutions that make a real impact.</p>
+                    <p>My expertise lies in <span class="font-semibold text-blue-600">[Key Technology 1, e.g., React]</span>, <span class="font-semibold text-blue-600">[Key Technology 2, e.g., Python]</span>, and <span class="font-semibold text-blue-600">[Key Technology 3, e.g., Cloud Platforms like AWS/Azure]</span>. I'm always eager to take on new challenges and contribute to exciting projects.</p>
+                    <p>Outside of coding, I enjoy <span class="italic">[Hobbies/Interests, e.g., hiking, photography, reading sci-fi novels]</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="bg-white p-8 rounded-xl shadow-lg mb-12 transform hover:scale-[1.005] transition duration-300 ease-in-out">
+            <h2 class="text-4xl font-extrabold text-center text-blue-700 mb-8 relative">
+                My Certifications
+                <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Certification Item 1 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">AWS Certified Solutions Architect – Associate</h3>
+                    <p class="text-gray-700 mb-2"><strong>Issued by:</strong> Amazon Web Services (AWS)</p>
+                    <p class="text-gray-600 text-sm mb-4"><strong>Date:</strong> March 2023</p>
+                    <a href="https://www.credly.com/badges/your-badge-id" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                        View Credential <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+                <!-- Certification Item 2 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">Certified Kubernetes Administrator (CKA)</h3>
+                    <p class="text-gray-700 mb-2"><strong>Issued by:</strong> Cloud Native Computing Foundation (CNCF)</p>
+                    <p class="text-gray-600 text-sm mb-4"><strong>Date:</strong> October 2022</p>
+                    <a href="https://www.credly.com/badges/your-badge-id" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                        View Credential <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+                <!-- Certification Item 3 -->
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-blue-600 mb-2">Google Professional Data Engineer</h3>
+                    <p class="text-gray-700 mb-2"><strong>Issued by:</strong> Google Cloud</p>
+                    <p class="text-gray-600 text-sm mb-4"><strong>Date:</strong> January 2024</p>
+                    <a href="https://www.credly.com/badges/your-badge-id" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                        View Credential <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                    </a>
+                </div>
+                <!-- Add more certification items as needed -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white p-8 rounded-xl shadow-lg mb-12 transform hover:scale-[1.005] transition duration-300 ease-in-out">
+            <h2 class="text-4xl font-extrabold text-center text-blue-700 mb-8 relative">
+                My Projects
+                <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+            </h2>
+
+            <!-- Web Development Projects -->
+            <div class="mb-10">
+                <h3 class="text-3xl font-bold text-center text-purple-600 mb-6">Web Development</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/007bff/ffffff?text=Project+1+Image" alt="Project 1 Screenshot" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-300">
+                        <h4 class="text-2xl font-semibold text-blue-600 mb-2">E-commerce Platform</h4>
+                        <p class="text-gray-700 mb-4">Developed a full-stack e-commerce application with user authentication, product catalog, shopping cart, and payment integration. Focused on a smooth user experience and responsive design.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-200 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">React</span>
+                            <span class="bg-green-200 text-green-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                            <span class="bg-red-200 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                            <span class="bg-yellow-200 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+                        </div>
+                        <div class="flex justify-start space-x-4">
+                            <a href="https://your-project1-demo.netlify.app/" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="https://github.com/yourprofile/project1-repo" target="_blank" class="text-gray-600 hover:text-gray-900 font-medium flex items-center">
+                                GitHub <i class="fab fa-github ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/007bff/ffffff?text=Project+2+Image" alt="Project 2 Screenshot" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-300">
+                        <h4 class="text-2xl font-semibold text-blue-600 mb-2">Personal Blog Site</h4>
+                        <p class="text-gray-700 mb-4">A responsive personal blog platform featuring Markdown support, comment section, and SEO optimization. Built for fast loading and easy content management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-200 text-purple-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Next.js</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">GraphQL</span>
+                            <span class="bg-teal-200 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full">PostgreSQL</span>
+                        </div>
+                        <div class="flex justify-start space-x-4">
+                            <a href="https://your-project2-demo.vercel.app/" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="https://github.com/yourprofile/project2-repo" target="_blank" class="text-gray-600 hover:text-gray-900 font-medium flex items-center">
+                                GitHub <i class="fab fa-github ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/007bff/ffffff?text=Project+3+Image" alt="Project 3 Screenshot" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-300">
+                        <h4 class="text-2xl font-semibold text-blue-600 mb-2">Real-time Chat Application</h4>
+                        <p class="text-gray-700 mb-4">Developed a real-time chat application with user authentication, group chats, and direct messaging capabilities using WebSockets.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-200 text-indigo-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+                            <span class="bg-orange-200 text-orange-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+                            <span class="bg-blue-200 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Socket.IO</span>
+                        </div>
+                        <div class="flex justify-start space-x-4">
+                            <a href="https://your-project3-demo.firebaseapp.com/" target="_blank" class="text-blue-500 hover:text-blue-700 font-medium flex items-center">
+                                Live Demo <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                            </a>
+                            <a href="https://github.com/yourprofile/project3-repo" target="_blank" class="text-gray-600 hover:text-gray-900 font-medium flex items-center">
+                                GitHub <i class="fab fa-github ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Science / Machine Learning Projects -->
+            <div class="mb-10">
+                <h3 class="text-3xl font-bold text-center text-purple-600 mb-6 mt-12">Data Science / Machine Learning</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 4 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/007bff/ffffff?text=ML+Project+1+Image" alt="ML Project 1 Screenshot" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-300">
+                        <h4 class="text-2xl font-semibold text-blue-600 mb-2">Customer Churn Prediction</h4>
+                        <p class="text-gray-700 mb-4">Developed a machine learning model to predict customer churn for a telecom company using historical data, achieving high accuracy and providing actionable insights.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-pink-200 text-pink-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-teal-200 text-teal-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Pandas</span>
+                            <span class="bg-yellow-200 text-yellow-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Scikit-learn</span>
+                            <span class="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Jupyter</span>
+                        </div>
+                        <div class="flex justify-start space-x-4">
+                            <a href="https://github.com/yourprofile/ml-project1-repo" target="_blank" class="text-gray-600 hover:text-gray-900 font-medium flex items-center">
+                                GitHub <i class="fab fa-github ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card 5 -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300 ease-in-out">
+                        <img src="https://placehold.co/400x250/007bff/ffffff?text=ML+Project+2+Image" alt="ML Project 2 Screenshot" class="w-full h-48 object-cover rounded-md mb-4 border border-gray-300">
+                        <h4 class="text-2xl font-semibold text-blue-600 mb-2">Image Classification with CNNs</h4>
+                        <p class="text-gray-700 mb-4">Implemented a Convolutional Neural Network (CNN) for image classification on a custom dataset, demonstrating expertise in deep learning frameworks.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-red-200 text-red-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Python</span>
+                            <span class="bg-orange-200 text-orange-800 text-sm font-medium px-2.5 py-0.5 rounded-full">TensorFlow</span>
+                            <span class="bg-blue-200 text-blue-800 text-sm font-medium px-2.5 py-0.5 rounded-full">Keras</span>
+                        </div>
+                        <div class="flex justify-start space-x-4">
+                            <a href="https://github.com/yourprofile/ml-project2-repo" target="_blank" class="text-gray-600 hover:text-gray-900 font-medium flex items-center">
+                                GitHub <i class="fab fa-github ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project categories and projects as needed -->
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-lg transform hover:scale-[1.005] transition duration-300 ease-in-out">
+            <h2 class="text-4xl font-extrabold text-center text-blue-700 mb-8 relative">
+                Contact Me
+                <span class="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-blue-500 rounded-full"></span>
+            </h2>
+            <p class="text-lg text-gray-700 text-center mb-8">I'm always open to new opportunities, collaborations, and interesting discussions. Feel free to reach out!</p>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
+                <!-- Email Contact -->
+                <div class="text-center">
+                    <a href="mailto:your.email@example.com" class="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
+                        <i class="fas fa-envelope text-5xl mb-3"></i>
+                        <p class="text-xl font-semibold">your.email@example.com</p>
+                    </a>
+                </div>
+                <!-- LinkedIn Contact -->
+                <div class="text-center">
+                    <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
+                        <i class="fab fa-linkedin-in text-5xl mb-3"></i>
+                        <p class="text-xl font-semibold">linkedin.com/in/yourprofile</p>
+                    </a>
+                </div>
+                <!-- Optional: Add a phone number or other contact method -->
+                <!--
+                <div class="text-center">
+                    <a href="tel:+1234567890" class="text-blue-600 hover:text-blue-800 transition duration-300 ease-in-out">
+                        <i class="fas fa-phone text-5xl mb-3"></i>
+                        <p class="text-xl font-semibold">+1 (234) 567-890</p>
+                    </a>
+                </div>
+                -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-4">&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 text-2xl">
+                <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" class="hover:text-blue-400 transition duration-300 ease-in-out" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:your.email@example.com" target="_blank" class="hover:text-blue-400 transition duration-300 ease-in-out" aria-label="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="hover:text-blue-400 transition duration-300 ease-in-out" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- Add more social icons here -->
+            </div>
+            <p class="text-sm mt-4 text-gray-400">Built with ❤️ and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for dynamic current year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
